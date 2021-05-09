@@ -1,0 +1,462 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+/*HEADER  SECTION*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #365C9A;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 20px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+    margin: 20px;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a {
+    color: #fff;
+}
+
+header .navigation li a:hover {
+    color: #8f8c8d;
+}
+
+/*HOME SECTION*/
+
+div .B {
+    min-height: 680px;
+    height: 100vh
+}
+
+.B .container {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.B .row {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div .F {
+    position: absolute;
+    top: 0;
+    min-height: 680px;
+    height: 100vh;
+    width: 100%;
+}
+
+.F .container {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.F .row {
+    height: 500px;
+    display: block;
+}
+
+.F .col-6 {
+    display: inline-block;
+    height: inherit;
+}
+
+.F img {
+    object-fit: scale-down;
+    height: 80%;
+    width: 85%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 0;
+    transition: 1s;
+}
+
+.F img:hover {
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+}
+
+.F .content {
+    padding-top: 4%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.F h3 {
+    display: block;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.F h1 {
+    display: block;
+    font-family: sans-serif;
+    font-size: 55px;
+    color: white;
+    margin-top: 30px;
+}
+
+.start_Shipping {
+    background-color: #F1F1F1;
+    border-radius: 50px;
+    padding: 12px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 13px;
+    height: 60px;
+    width: 20px;
+    margin-top: 8px;
+    border: 0px;
+    color: #00040a;
+    text-decoration: none;
+}
+
+/*BEST SELLER SECTION*/
+
+.card {
+    transition: 0.3s;
+    width: 30%;
+    text-align: center;
+    padding: 16px;
+    ;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.card .container h1 {
+    font-size: 20px;
+}
+
+.card .container p {
+    font-size: 10px;
+}
+
+.container.title {
+    text-align: center;
+}
+
+.fa-star, .fa-star-half-o, .fa-star-o {
+    color: #FF523B;
+    font-size: 300%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*SIZE CHART*/
+
+.sizesec .Stitle {
+    text-align: center;
+}
+
+.table {
+    text-align: center;
+    width: 80%;
+    padding: 10px 50px;
+    line-height: 3em;
+    font-size: 115%;
+    font-weight: 500;
+    border-collapse: collapse;
+    margin: 100px 10%;
+    overflow: hidden;
+}
+
+.table td, th {
+    border-bottom: 1px solid black;
+}
+
+.trr2, .trr4 {
+    background-color: #F1F1F1;
+}
+
+[class*="trr"]:hover {
+    background-color: #4E84C2;
+}
+
+/*OUR TEAM SECTION*/
+
+.our-team.container {
+    padding: 2px 16px;
+}
+
+.our-team.title {
+    text-align: center;
+}
+
+/*CONTACT US SECTION*/
+
+.contact .Otitle {
+    text-align: center;
+}
+
+.contact {
+    padding: 40px 10px 50px 40px;
+    margin: auto;
+    margin-top: 3%s;
+}
+
+.formcont {
+    width: 115%;
+}
+
+.loginbox {
+    padding: 0;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.loginbox input, textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+    width: 40%;
+}
+
+.loginbox textarea:focus, input:focus {
+    border-color: rgb(35, 173, 278);
+    box-shadow: 0 0 10px rgb(35, 173, 278);
+}
+
+textarea {
+    width: 85%;
+}
+
+.loginbox input[type="submit"] {
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    background: #365C9A;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -5px;
+}
+
+.conth1 {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.contimg {
+    padding: 26px;
+}
+
+.imgmp {
+    width: 100%;
+}
+
+/*FOOTER SECTION*/
+
+.foot {
+    text-align: center;
+    color: #F1F1F1;
+    background-color: #365C9A;
+    padding: 10px;
+    bottom: 0;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+    .col-s-0 {
+        display: none;
+    }
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    header .navigation {
+        position: relative;
+        display: flex;
+        margin: 20px;
+        margin-right: 100px;
+    }
+    .foot {
+        width: 110%;
+    }
+    img {
+        vertical-align: middle;
+    }
+    .homeimg {
+        width: 90%;
+        margin: -150px;
+        margin-left: 10px;
+    }
+    .hometext {
+        margin-left: 10px;
+    }
+    .col-12 {
+        text-align: center;
+    }
+    .F h1 {
+        margin-left: 80px;
+    }
+    .F h3 {
+        margin-left: 80px;
+    }
+    .start_Shipping {
+        margin-left: 80px;
+    }
+    .F img {
+        margin-top: -50px;
+    }
+    #BestSeller .container.card {
+        margin-left: -40px;
+    }
+}
